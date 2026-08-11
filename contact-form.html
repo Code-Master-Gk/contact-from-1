@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Enterprise Technology, AI & Cyber Security</title>
+  <link rel="stylesheet" href="contact-form.css">
+</head>
+<body>
+
+  <!-- Reusable Contact Form Section -->
+  <section class="contact-section" id="contact-section">
+    <div class="contact-container">
+
+      <!-- LEFT COLUMN: Professional Visual & Info Card -->
+      <div class="contact-left-col">
+        <div class="contact-image-wrapper">
+          <img 
+            src="assets/tech-contact.jpg" 
+            alt="UK Technology, AI and Cybersecurity Team" 
+            class="contact-image"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80';"
+          />
+          <div class="contact-image-overlay"></div>
+          <div class="image-security-badge">
+            <div class="security-badge-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="security-badge-text">
+              <h4 class="security-badge-title">AI-Driven Security</h4>
+              <p class="security-badge-sub">Protecting UK enterprise technology with bespoke ML solutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dark Navy Information Card -->
+        <div class="contact-info-card">
+          <div class="info-card-header">
+            <h3 class="info-card-badge">Let's Talk</h3>
+            <p class="info-card-subtitle">"Have a question or looking for the right solution? Our team is ready to help."</p>
+          </div>
+
+          <div class="contact-details-list">
+            <!-- Email -->
+            <div class="contact-detail-item">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-detail-meta">
+                <span class="contact-detail-label">Email</span>
+                <a href="mailto:gopalkumahto3@gmail.com" class="contact-detail-value">gopalkumahto3@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-detail-item">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-detail-meta">
+                <span class="contact-detail-label">Phone</span>
+                <a href="tel:+442079460192" class="contact-detail-value">+91 9990161198</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-detail-item">
+              <div class="contact-icon-box" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-detail-meta">
+                <span class="contact-detail-label">Location</span>
+                <span class="contact-detail-value">India, New Delhi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Contact Form Wrapper -->
+      <div class="contact-right-col">
+        <div class="contact-form-wrapper">
+          <div class="form-header">
+            <span class="form-category-tag">GET IN TOUCH</span>
+            <h2 class="form-main-heading">Let's Start a Conversation</h2>
+            <p class="form-sub-heading">Tell me a little about your requirements and I'll get back to you shortly.</p>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contactForm" class="contact-form" novalidate>
+            <!-- Honeypot Field for Anti-Spam Bot Protection (hidden from humans) -->
+            <input type="text" name="_website_url_hp" id="_website_url_hp" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <!-- Full Name & Work Email -->
+            <div class="form-row">
+              <div class="form-group" id="group-fullName">
+                <label for="fullName" class="form-label">
+                  Full Name <span class="required-star">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="fullName" 
+                  name="fullName" 
+                  class="form-input" 
+                  placeholder="e.g. Sarah Jenkins" 
+                  required
+                />
+                <span class="field-error-msg" id="error-fullName"></span>
+              </div>
+
+              <div class="form-group" id="group-workEmail">
+                <label for="workEmail" class="form-label">
+                  Work Email <span class="required-star">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="workEmail" 
+                  name="workEmail" 
+                  class="form-input" 
+                  placeholder="e.g. s.jenkins@company.co.uk" 
+                  required
+                />
+                <span class="field-error-msg" id="error-workEmail"></span>
+              </div>
+            </div>
+
+            <!-- Phone Number & Company Name -->
+            <div class="form-row">
+              <div class="form-group" id="group-phoneNumber">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input 
+                  type="tel" 
+                  id="phoneNumber" 
+                  name="phoneNumber" 
+                  class="form-input" 
+                  placeholder="e.g. 9990161198"
+                />
+                <span class="field-error-msg" id="error-phoneNumber"></span>
+              </div>
+
+              <div class="form-group" id="group-companyName">
+                <label for="companyName" class="form-label">Company Name</label>
+                <input 
+                  type="text" 
+                  id="companyName" 
+                  name="companyName" 
+                  class="form-input" 
+                  placeholder="e.g. Nexus Cyber Tech Ltd"
+                />
+                <span class="field-error-msg" id="error-companyName"></span>
+              </div>
+            </div>
+
+            <!-- Enquiry Type -->
+            <div class="form-group" id="group-enquiryType">
+              <label for="enquiryType" class="form-label">
+                Enquiry Type <span class="required-star">*</span>
+              </label>
+              <select id="enquiryType" name="enquiryType" class="form-select" required>
+                <option value="" disabled selected>Select an enquiry type</option>
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Corporate Training">Corporate Training</option>
+                <option value="AI & Machine Learning">AI & Machine Learning</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Software Development">Software Development</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="field-error-msg" id="error-enquiryType"></span>
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group" id="group-subject">
+              <label for="subject" class="form-label">
+                Subject <span class="required-star">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                class="form-input" 
+                placeholder="e.g. Enterprise AI & Security Advisory" 
+                required
+              />
+              <span class="field-error-msg" id="error-subject"></span>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group" id="group-message">
+              <label for="message" class="form-label">
+                Message <span class="required-star">*</span>
+              </label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form-textarea" 
+                rows="5" 
+                placeholder="Tell us a little about your project or technical requirements..." 
+                required
+              ></textarea>
+              <span class="field-error-msg" id="error-message"></span>
+            </div>
+
+            <!-- Privacy Checkbox -->
+            <div class="form-group checkbox-group" id="group-privacyConsent">
+              <label class="checkbox-label-container">
+                <input type="checkbox" id="privacyConsent" name="privacyConsent" class="custom-checkbox-input" required />
+                <span class="custom-checkbox-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="checkbox-text">
+                  I agree to the <a href="#privacy" onclick="event.preventDefault();">Privacy Policy</a> and consent to being contacted regarding my enquiry.
+                </span>
+              </label>
+              <span class="field-error-msg" id="error-privacyConsent"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitBtn" class="submit-btn">
+              <span class="btn-spinner"></span>
+              <span id="btnText">Send Enquiry</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Success State Banner Card -->
+          <div id="formSuccessCard" class="form-success-card" aria-hidden="true">
+            <div class="success-icon-badge">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div class="success-text-content">
+              <h3 class="success-heading">Thank you!</h3>
+              <p class="success-message-text">Your enquiry has been received. I'll get back to you shortly.</p>
+              <button type="button" id="resetFormBtn" class="reset-form-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="1 4 1 10 7 10"></polyline>
+                  <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                </svg>
+                Send Another Enquiry
+              </button>
+            </div>
+          </div>
+
+          <!-- Error State Banner Card -->
+          <div id="formErrorCard" class="form-error-card" aria-hidden="true">
+            <div class="error-icon-badge">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <div class="error-text-content">
+              <h3 class="error-heading">Submission Error</h3>
+              <p id="errorCardMessage" class="error-message-text">Sorry, something went wrong. Please try again or contact me directly by email.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="contact-form.js"></script>
+</body>
+</html>

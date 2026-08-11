@@ -1,0 +1,6 @@
+{
+  "name": "Contact Form",
+  "description": "A premium, modern and professional Contact Form section for UK tech, AI and cybersecurity enterprise websites.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
